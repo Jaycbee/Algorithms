@@ -1,4 +1,17 @@
 
+/* 
+
+--Note--
+
+Quick-Sort, a divide conquer algorithm works by routinely:
+
+1. selecting a pivot element
+2. reordering such that [low < pivot][pivot][low > pivot]
+3. repeating for [low < pivot] and [low > pivot]
+
+*/
+    
+
 fn partition(arr : & mut [i8], low : usize, high : usize) -> usize { 
     
     let pivot = arr[high]; // pick last element
