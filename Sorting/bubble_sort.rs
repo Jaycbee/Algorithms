@@ -1,5 +1,16 @@
-fn bubble_sort(arr : & mut [i8]) {
 
+/* 
+--Note--
+
+bubble_sort, a simple algorithm works by routinely:
+
+1. swapping neighbor if less/more
+2. repeating until array sorted (no swaps)
+
+*/
+    
+
+fn bubble_sort(arr : & mut [i8]) {
     let mut pass : bool = false;
 
     for x in 0..(arr.len() - 1){
@@ -15,10 +26,8 @@ fn bubble_sort(arr : & mut [i8]) {
 
 
 fn main() {
-
     let mut array : [i8;7] = [100,1,2,20,6,10,5];
 
     bubble_sort(& mut array);
-    
     println!("sorted array (low-high) : {:#?}", array);
 }
